@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crime Rate Detector</title>
+  <style>
+    :root {
+      --teal: #008080;
+      --mint: #98FF98;
+      --white: #ffffff;
+      --gray: #f0f0f0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: var(--gray);
+      color: #333;
+    }
+
+    header {
+      background-color: var(--teal);
+      color: var(--white);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: var(--mint);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background-color: var(--white);
+      border-left: 6px solid var(--teal);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    form input, form button {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid var(--teal);
+    }
+
+    form button {
+      background-color: var(--mint);
+      color: #000;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--teal);
+      color: var(--white);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Crime Rate Detector</h1>
+    <nav>
+      <ul>
+        <li><a href="#report">Report Crime</a></li>
+        <li><a href="#officer">Officer Panel</a></li>
+        <li><a href="#investigation">Investigation</a></li>
+        <li><a href="#court">Court Case</a></li>
+        <li><a href="#evidence">Evidence</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="report">
+      <h2>Report a Crime</h2>
+      <form>
+        <input type="text" placeholder="Criminal Name" required />
+        <input type="text" placeholder="Crime Description" required />
+        <button type="submit">File Report</button>
+      </form>
+    </section>
+
+    <section id="officer">
+      <h2>Officer Panel</h2>
+      <button onclick="alert('Investigation Assigned')">Assign Investigation</button>
+    </section>
+
+    <section id="investigation">
+      <h2>Investigation Dashboard</h2>
+      <button onclick="alert('Case Status Updated')">Update Case Status</button>
+    </section>
+
+    <section id="evidence">
+      <h2>Submit Evidence</h2>
+      <form>
+        <input type="text" placeholder="Evidence ID" required />
+        <input type="text" placeholder="Type of Evidence" required />
+        <button type="submit">Add Evidence</button>
+      </form>
+    </section>
+
+    <section id="court">
+      <h2>Court Case Management</h2>
+      <input type="text" placeholder="Court Case ID" />
+      <input type="date" />
+      <button onclick="alert('Court Decision Added')">Add Decision</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Crime Rate Detector</p>
+  </footer>
+</body>
+</html>
